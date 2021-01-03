@@ -1,0 +1,34 @@
+<header class="header">
+  <div class="header-container">
+    <h1 class="screen-readers">{{ .Page.Title }}</h1>
+
+    {{ "<!-- Site logo -->" | safeHTML }}
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}"><img class="logo-img" src="{{ .Site.BaseURL }}images/{{ .Site.Params.logo | safeHTML }}" alt="{{ .Page.Title }}"></a>
+    </div>
+
+    {{ "<!-- Site navigation -->" | safeHTML }}
+    <nav class="nav">
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+
+      <div class="menu-dropdown">
+        <ul class="nav-menu">
+          {{ $current := . }}
+          {{ range .Site.Menus.nav }}
+          {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+          {{ $active = or $active (eq .Name $current.Title) }}
+          {{ $active = or $active (and (eq .Name "About Us") (eq $current.Section "about")) }}
+          <li><a class="{{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+
+    {{ "<!-- Seal of transparency -->" | safeHTML }}
+    <div class="sot">
+      <img src="{{ .Site.BaseURL}}images/sot.png" alt="Seal of transparency">
+    </div>
+  </div> {{ "<!-- .header-container -->" | safeHTML }}
+</header>

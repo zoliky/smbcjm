@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0beta2 (unknown)"
+   sodipodi:docname="404.svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 304 114;"
+   viewBox="0 0 304 114"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs15" /><sodipodi:namedview
+   inkscape:current-layer="Layer_1"
+   inkscape:window-maximized="1"
+   inkscape:window-y="27"
+   inkscape:window-x="0"
+   inkscape:cy="91.058559"
+   inkscape:cx="201.12358"
+   inkscape:zoom="2.8470395"
+   showgrid="false"
+   id="namedview13"
+   inkscape:window-height="969"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   inkscape:document-rotation="0"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<style
+   id="style2"
+   type="text/css">
+	.st0{fill:#9FD7C9;}
+</style>
+<g
+   id="g10">
+	<path
+   style="fill:#3d9ca8;fill-opacity:1"
+   id="path4"
+   d="M54.95,111.93V91.78H2.24V69.64l41.8-67.9h39.48v65.09h13.38v24.95H83.53v20.16H54.95z M54.95,26.52   L29.83,66.83h25.11V26.52z"
+   class="st0" />
+	<path
+   style="fill:#3d9ca8;fill-opacity:1"
+   id="path6"
+   d="M104.67,56.92c0-29.08,15.03-56.83,47.25-56.83c32.21,0,47.25,27.75,47.25,56.83c0,29.08-15.04,57-47.25,57   C119.7,113.91,104.67,85.99,104.67,56.92z M170.42,56.92c0-19.49-5.29-31.72-18.5-31.72c-13.22,0-18.5,12.23-18.5,31.72   c0,19.49,5.29,31.88,18.5,31.88C165.13,88.8,170.42,76.41,170.42,56.92z"
+   class="st0" />
+	<path
+   style="fill:#3d9ca8;fill-opacity:1"
+   id="path8"
+   d="M259.79,111.93V91.78h-52.7V69.64l41.8-67.9h39.48v65.09h13.38v24.95h-13.38v20.16H259.79z M259.79,26.52   l-25.11,40.31h25.11V26.52z"
+   class="st0" />
+</g>
+</svg>

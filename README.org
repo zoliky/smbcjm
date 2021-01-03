@@ -1,0 +1,14 @@
+#+TITLE: Spring Mountain Benefit Corp.
+#+AUTHOR: Zoltán Király
+#+EMAIL: zoliky@gmail.com
+#+DATE: <2021-01-03 Sun>
+
+Spring Mountain Benefit Corp. is a nonprofit organization focused on community improvement and neighborhood development.
+
+https://smbcjm.org
+
+[[./screenshot.png]]
+
+** Contact
+
+Technical inquiries regarding the website should be directed to [[mailto:zoliky@gmail.com][zoliky@gmail.com]]

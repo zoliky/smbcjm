@@ -1,0 +1,15 @@
+{{ if .Site.Params.intro.enable }}
+<section class="intro">
+  <div class="intro-container">
+    {{ with .Site.Params.intro }}
+    <h2 class="heading">{{ .heading }}</h2>
+    <p>
+      {{ .description }}
+      {{ if .button }}
+        <br><a class="button" role="button" href="{{ .buttonURL }}">{{ .buttonText }}</a>
+      {{ end }}
+    {{ end }}
+    </p>
+  </div>
+</section> {{ "<!-- .mission -->" | safeHTML }}
+{{ end }}

@@ -1,0 +1,78 @@
+# ----------------------------------------------------------------------------
+#           FILE: config.toml
+#    DESCRIPTION: Hugo configuration file
+#         AUTHOR: Zoltán Király <zoliky@gmail.com>
+# ----------------------------------------------------------------------------
+
+title         = "Spring Mountain Benefit Corp."
+baseURL       = "https://smbcjm.org/"
+languageCode  = "en-US"
+theme         = "smbcjm"
+
+# Site params
+[params]
+  logo        = "logo.png"
+  author      = "Megan Saul"
+  description = "Spring Mountain Benefit Corp. is a nonprofit focused on community improvement and neighborhood development."
+  copyright   = "Spring Mountain Benefit Corp. (SMBC)"
+
+# Intro
+[params.intro]
+  enable      = true
+  heading     = "About us"
+  description = "Spring Mountain Benefit Corp. (501c3) is a nonprofit corporation organized and operated exclusively for charitable purposes. The purpose of this non-profit is to provide community development assistance to the Spring Mountain neighborhood."
+  button      = true
+  buttonText  = "Learn More"
+  buttonURL   = "about"
+
+# Menus
+[[menu.nav]]
+  name    = "Home"
+  url     = "/"
+  weight  = 1
+
+[[menu.nav]]
+  name    = "About Us"
+  url     = "/about"
+  weight  = 2
+
+[[menu.nav]]
+  name    = "Blog"
+  url     = "/blog"
+  weight  = 3
+
+[[menu.nav]]
+  name    = "Gallery"
+  url     = "/gallery"
+  weight  = 4
+
+[[menu.nav]]
+  name    = "Donate"
+  url     = "/donate"
+  weight  = 5
+
+[[menu.nav]]
+  name    = "Contact"
+  url     = "#contact"
+  weight  = 6
+
+# Footer
+[params.footer]
+  phone = "+1 876-486-2219"
+  email = "msaul@smbcjm.org"
+
+# Social
+[[params.social]]
+  icon  = "icon-facebook"
+  title = "Connect with us on Facebook"
+  url   = "https://www.facebook.com/springmountainvilla"
+
+[[params.social]]
+  icon  = "icon-twitter"
+  title = "Follow us on Twitter"
+  url   = "https://twitter.com/SpringMountNP"
+
+[[params.social]]
+  icon  = "icon-email"
+  title = "Contact us via email"
+  url   = "mailto:msaul@smbcjm.org?subject=Hello%20There!&body=Hello%20Megan,"

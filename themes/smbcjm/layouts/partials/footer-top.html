@@ -1,0 +1,48 @@
+<div class="footer-top">
+  <div class="footer-top-container">
+    <div class="footer-col-1 contact" id="contact">
+      <h3>Contact</h3>
+      <div class="address">
+        <h4>Phone</h4>
+        <p><a href="tel:+18764862219">{{ .Site.Params.footer.phone }}</a></p><br>
+        <h4>Email</h4>
+        <p><a href="mailto:{{ .Site.Params.footer.email }}">{{ .Site.Params.footer.email }}</a></p><br>
+        <h4>Main Address</h4>
+        <p>240 Quinn Street<br> Naugatuck, CT 08618 USA</p>
+      </div>
+      <ul class="social">
+        {{ range .Site.Params.social }}
+        <li>
+          <a href="{{ .url }}" target="_blank" rel="noopener">
+            <i aria-hidden="true" class="{{ .icon }}" title="{{ .title }}"></i>
+            <span class="screen-readers">{{ .title }}</span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="footer-col-2">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/financials">Financials</a></li>
+        <li><a href="/fundraising">Fundraising</a></li>
+        <li><a href="/achievemts">Achievements</a></li>
+      </ul>
+    </div>
+    <div class="footer-col-3">
+      <h3>About</h3>
+      <p>Spring Mountain Benefit Corp. is a nonprofit (501c3) charitable organization. Donations are tax-deductible as allowed by law.</p>
+      <ul>
+        <li><a href="https://apps.irs.gov/app/eos/displayAll.do?dispatchMethod=displayAllInfo&Id=5305185&ein=462999325">Verify 501c3 Status</a></li>
+        <li><a href="https://www.guidestar.org/profile/46-2999325" target="_blank" rel="noopener">Our Profile on GuideStar</a></li>
+      </ul>
+      <div class="badges">
+        <a href="https://greatnonprofits.org/org/spring-mountain-benefit-corp?badge=1" target="_blank" rel="noopener"><img class="badge-gn" src="{{ .Site.BaseURL }}images/great-nonprofits.png" alt="Great nonprofits"></a>
+        <a href="https://www.guidestar.org/profile/46-2999325"><img class="badge-sot" src="{{ .Site.BaseURL }}images/sot.png" alt="Seal of transparency"></a>
+      </div>
+    </div>
+  </div>
+</div> {{ "<!-- .footer-top -->" | safeHTML }}

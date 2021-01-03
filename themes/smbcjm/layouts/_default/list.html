@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="blog">
+  <div class="blog-container">
+    <h2>{{ .Title }}</h2>
+    {{ range (.Paginator 6).Pages }}
+    <article class="blog-post">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <div class="post-content">
+        <p>{{ .Summary }}</p>
+      </div>
+      <div class="post-meta">
+        <img class="avatar" src="{{ .Site.BaseURL }}images/avatar.jpg" alt="avatar">
+        <span class="posted-by">{{ .Params.author }}</span>
+        {{ if .Date }}
+        <span class="posted-on">on {{ .Date.Format "January 2, 2006" }}</span>
+        {{ end }}
+      </div>
+      <a class="read-more" href="{{ .Permalink }}">Read more</a>
+    </article>
+    {{ end }}
+    <div class="paginator">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
