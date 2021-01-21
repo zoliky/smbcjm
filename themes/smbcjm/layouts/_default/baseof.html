@@ -7,7 +7,7 @@
   <meta name="author" content="{{ .Site.Params.author }}">
   <meta name="designer" content="Zoltan Kiraly">
   <meta name="description" content="{{ .Site.Params.description }}">
-  <title>{{ .Page.Title }}</title>
+  <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
   {{ "<!-- Twitter card -->" | safeHTML }}
   <meta name="twitter:card" content="summary">
