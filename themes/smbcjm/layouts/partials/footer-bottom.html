@@ -1,6 +1,6 @@
 <div class="footer-bottom">
   <div class="footer-bottom-container">
-    <p>&copy; {{ dateFormat "2006" now }} Copyright {{ .Site.Params.copyright }}</p>
+    <p>{{ with replace .Site.Params.copyright "{currentYear}" now.Year }}{{ . | markdownify }}{{ end }}</p>
     <ul class="footer-bottom-links">
       <li><a href="https://www.kingwebsolutions.net">Website by King Web Solutions</a></li>
     </ul>

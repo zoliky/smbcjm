@@ -14,7 +14,7 @@ theme         = "smbcjm"
   logo        = "logo.png"
   author      = "Megan Saul"
   description = "Spring Mountain Benefit Corp. is a nonprofit focused on community improvement and neighborhood development."
-  copyright   = "Spring Mountain Benefit Corp. (SMBC)"
+  copyright   = "Copyright {currentYear} Spring Mountain Benefit Corp. (SMBC)"
 
 # Intro
 [params.intro]
