@@ -13,11 +13,7 @@
   {{ template "_internal/twitter_cards.html" . }}
 
   {{ "<!-- Facebook OpenGraph -->" | safeHTML }}
-  <meta property="og:title" content="{{ .Site.Title }}" />
-  <meta property="og:description" content=" {{ .Site.Params.description }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}images/logo-social.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
+  {{ template "_internal/opengraph.html" . }}
 
   {{ "<!-- Scripts -->" | safeHTML }}
   <script src="https://kit.fontawesome.com/eca7e491a7.js" crossorigin="anonymous"></script>
