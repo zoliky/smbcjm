@@ -13,6 +13,7 @@ theme         = "smbcjm"
 [params]
   logo        = "logo.png"
   author      = "Megan Saul"
+  images      = ["logo-social.jpg"]
   description = "Spring Mountain Benefit Corp. is a nonprofit focused on community improvement and neighborhood development."
   copyright   = "Copyright {currentYear} Spring Mountain Benefit Corp. (SMBC)"
 
@@ -62,17 +63,20 @@ theme         = "smbcjm"
   email = "msaul@smbcjm.org"
 
 # Social
-[[params.social]]
-  icon  = "icon-facebook"
-  title = "Connect with us on Facebook"
-  url   = "https://www.facebook.com/springmountainvilla"
+[social]
+  twitter = "SpringMountNP"
+  
+  [[params.social]]
+    icon  = "icon-facebook"
+    title = "Connect with us on Facebook"
+    url   = "https://www.facebook.com/springmountainvilla"
 
-[[params.social]]
-  icon  = "icon-twitter"
-  title = "Follow us on Twitter"
-  url   = "https://twitter.com/SpringMountNP"
+  [[params.social]]
+    icon  = "icon-twitter"
+    title = "Follow us on Twitter"
+    url   = "https://twitter.com/SpringMountNP"
 
-[[params.social]]
-  icon  = "icon-email"
-  title = "Contact us via email"
-  url   = "mailto:msaul@smbcjm.org?subject=Hello%20There!&body=Hello%20Megan,"
+  [[params.social]]
+    icon  = "icon-email"
+    title = "Contact us via email"
+    url   = "mailto:msaul@smbcjm.org?subject=Hello%20There!&body=Hello%20Megan,"
