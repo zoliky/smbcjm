@@ -19,10 +19,10 @@
   <script src="https://kit.fontawesome.com/eca7e491a7.js" crossorigin="anonymous"></script>
 
   {{ "<!-- Favicon -->" | safeHTML }}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}images/favicon-16x16.png">
-  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+  <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 
   {{ $style := resources.Get "css/main.css" | minify }}
   {{ "<!-- Styles -->" | safeHTML }}
