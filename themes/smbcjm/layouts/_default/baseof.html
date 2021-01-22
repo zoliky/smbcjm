@@ -10,12 +10,7 @@
   <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
   {{ "<!-- Twitter card -->" | safeHTML }}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@SpringMountNP">
-  <meta name="twitter:creator" content="@SpringMountNP">
-  <meta name="twitter:title" content="{{ .Site.Title }}">
-  <meta name="twitter:description" content="{{ .Site.Params.description }}">
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}images/logo-social.jpg">
+  {{ template "_internal/twitter_cards.html" . }}
 
   {{ "<!-- Facebook OpenGraph -->" | safeHTML }}
   <meta property="og:title" content="{{ .Site.Title }}" />
