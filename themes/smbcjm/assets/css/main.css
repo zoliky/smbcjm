@@ -506,6 +506,10 @@ ul > li + li {
   margin: 0 auto;
 }
 
+.blog img {
+  height: auto;
+}
+
 .blog-post {
   padding: 2em;
   margin: 1.5em -1.2em;
