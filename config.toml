@@ -57,6 +57,19 @@ theme         = "smbcjm"
   url     = "#contact"
   weight  = 6
 
+# Permalinks
+[permalinks]
+  posts = "posts/:year/:month/:slug"
+  year  = "/posts/:slug/"
+  month = "/posts/:slug/"
+
+# Taxonomies
+[taxonomies]
+  year     = "year"
+  month    = "month"
+  tag      = "tags"
+  category = "categories"
+
 # Footer
 [params.footer]
   phone = "+1 876-486-2219"
