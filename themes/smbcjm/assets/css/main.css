@@ -267,21 +267,12 @@ ul > li + li {
 
 .nav-menu > li > a {
   display: block;
+  position: relative;
   font-size: 1.3rem;
   padding: 0.8em .5em;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--menu-items-color);
-}
-
-
-.nav-menu > li > a::after {
-  display: block;
-  content: "";
-  width: 0;
-  height: 2px;
-  background: currentColor;
-  transition: width .5s ease-out;
 }
 
 /* Seal of transparency */
@@ -325,13 +316,34 @@ ul > li + li {
     line-height: 1.8;
   }
 
+  .nav-menu > li > a {
+    padding: .1em 0;
+    white-space: nowrap;
+  }
+
   .nav-menu > li + li {
+    margin-left: 2.3em;
     border-top: initial;
+  }
+
+  .nav-menu > li > a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 2px;
+    background: currentColor;
+    transition:
+      left .4s ease-out,
+      right .4s ease-out;
   }
 
   .nav-menu > li > a.active::after,
   .nav-menu > li > a:hover::after {
-    width: 100%;
+    left: 0;
+    right: 0;
   }
 }
 
