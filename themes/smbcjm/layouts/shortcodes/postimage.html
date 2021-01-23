@@ -1,0 +1,6 @@
+{{ $image := $.Page.Resources.GetMatch (.Get 0) }}
+{{ $smallImage := $image.Resize "700x" }}
+
+{{ with $smallImage }}
+  <p><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Get 1 }}" /></p>
+{{ end }}
