@@ -4,7 +4,12 @@
 
     {{ "<!-- Site logo -->" | safeHTML }}
     <div class="logo">
-      <a href="{{ .Site.BaseURL }}"><img class="logo-img" src="{{ .Site.BaseURL }}images/{{ .Site.Params.logo | safeHTML }}" alt="{{ .Page.Title }}"></a>
+      <a href="{{ .Site.BaseURL }}">
+        <picture>
+          <source class="logo-img" type="image/webp" srcset="{{ "images/logo.webp" | relURL }}">
+          <img class="logo-img" src="{{ "images/logo.png" | relURL }}" alt="{{ .Site.Title }}">
+        </picture>
+      </a>
     </div>
 
     {{ "<!-- Site navigation -->" | safeHTML }}
