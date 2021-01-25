@@ -1,6 +1,7 @@
 ---
 title: "About us"
 author: "Spring Mountain Benefit Corp."
+type: about
 draft: false
 ---
 
