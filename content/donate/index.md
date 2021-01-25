@@ -1,6 +1,7 @@
 ---
 title: "Donate"
 author: "Spring Mountain Benefit Corp."
+type: donate
 draft: false
 ---
 
