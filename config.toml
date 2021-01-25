@@ -33,7 +33,7 @@ theme         = "smbcjm"
   weight  = 1
 
 [[menu.nav]]
-  name    = "About Us"
+  name    = "About us"
   url     = "/about"
   weight  = 2
 
