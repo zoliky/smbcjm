@@ -24,7 +24,6 @@
           {{ range .Site.Menus.nav }}
           {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
           {{ $active = or $active (eq .Name $current.Title) }}
-          {{ $active = or $active (and (eq .Name "About Us") (eq $current.Section "about")) }}
           {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "posts")) }}
           <li><a class="{{ if $active }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
           {{ end }}
