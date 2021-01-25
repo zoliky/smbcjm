@@ -33,7 +33,7 @@
 
     {{ "<!-- Seal of transparency -->" | safeHTML }}
     <div class="sot">
-      <img src="{{ .Site.BaseURL}}images/sot.png" alt="Seal of transparency">
+      <img src="{{ "images/sot.png" | relURL }}" alt="Seal of transparency">
     </div>
   </div> {{ "<!-- .header-container -->" | safeHTML }}
 </header>
