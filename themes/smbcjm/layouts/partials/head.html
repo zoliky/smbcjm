@@ -1,0 +1,32 @@
+<head>
+  <meta charset="UTF-8">
+  {{ hugo.Generator }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta name="designer" content="Zoltan Kiraly">
+  <meta name="description" content="{{ with .Page.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+
+  {{ "<!-- Twitter card -->" | safeHTML }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  {{ "<!-- Facebook OpenGraph -->" | safeHTML }}
+  {{ template "_internal/opengraph.html" . }}
+
+  {{ "<!-- Scripts -->" | safeHTML }}
+  <script src="https://kit.fontawesome.com/a3eb3c88b5.js" crossorigin="anonymous"></script>
+  
+  {{ "<!-- Favicon -->" | safeHTML }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+  <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+
+  {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+  {{ "<!-- Styles -->" | safeHTML }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  {{ "<!-- Toolbar color for Android devices -->" | safeHTML}}
+  <meta name="theme-color" content="#ffffff">
+</head>
