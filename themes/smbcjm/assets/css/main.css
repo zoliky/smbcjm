@@ -110,7 +110,7 @@ ul > li + li {
   margin-top: 150px;
 }
 
-.screen-readers {
+.visuallyhidden {
   position: absolute;
   padding: 0;
   border: 0;
