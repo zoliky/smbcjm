@@ -33,7 +33,11 @@
 
     {{ "<!-- Seal of transparency -->" | safeHTML }}
     <div class="sot">
-      <img src="{{ "images/sot.png" | relURL }}" alt="Seal of transparency">
+      <picture>
+        <source type="image/avif" srcset="{{ "images/sot.avif" | relURL }}">
+        <source type="image/webp" srcset="{{ "images/sot.webp" | relURL }}">
+        <img src="{{ "images/sot.png" | relURL }}" alt="Seal of transparency">
+      </picture>
     </div>
   </div> {{ "<!-- .header-container -->" | safeHTML }}
 </header>
