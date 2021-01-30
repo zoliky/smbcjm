@@ -39,7 +39,13 @@
       </ul>
       <div class="badges">
         <a href="https://greatnonprofits.org/org/spring-mountain-benefit-corp?badge=1" target="_blank" rel="noopener"><img class="badge-gn" src="{{ "images/great-nonprofits.png" | relURL }}" alt="Great nonprofits"></a>
-        <a href="https://www.guidestar.org/profile/46-2999325"><img class="badge-sot" src="{{ "images/sot.png" | relURL }}" alt="Seal of transparency"></a>
+        <a href="https://www.guidestar.org/profile/46-2999325">
+          <picture>
+            <source  type="image/avif" srcset="{{ "images/sot.avif" | relURL }}">
+            <source class="badge-sot" type="image/webp" srcset="{{ "images/sot.webp" | relURL }}">
+            <img class="badge-sot" src="{{ "images/sot.png" | relURL }}" loading="lazy" alt="Seal of transparency">
+          </picture>
+        </a>
       </div>
     </div>
   </div>
