@@ -26,6 +26,12 @@
   {{ "<!-- Styles -->" | safeHTML }}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
   <link rel="stylesheet" href="{{ $style.Permalink }}">
+  
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ "<!-- RSS -->" | safeHTML }}
+  {{ $link := `<link rel="%s" type="%s" href="%s" title="%s" />` -}}
+  {{ printf $link .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
+  {{ end }}
 
   {{ "<!-- Toolbar color for Android devices -->" | safeHTML}}
   <meta name="theme-color" content="#ffffff">
