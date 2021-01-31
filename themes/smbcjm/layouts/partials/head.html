@@ -9,7 +9,7 @@
 
   {{ "<!-- Twitter card -->" | safeHTML }}
   {{ template "_internal/twitter_cards.html" . }}
-
+  
   {{ "<!-- Facebook OpenGraph -->" | safeHTML }}
   {{ template "_internal/opengraph.html" . }}
 
@@ -26,13 +26,16 @@
   {{ "<!-- Styles -->" | safeHTML }}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
   <link rel="stylesheet" href="{{ $style.Permalink }}">
-  
+
+  {{ "<!-- Locales -->" | safeHTML }}
+  <link rel="alternate" href="{{ .Site.BaseURL }}" hreflang="x-default">
+
   {{ with .OutputFormats.Get "rss" -}}
   {{ "<!-- RSS -->" | safeHTML }}
   {{ $link := `<link rel="%s" type="%s" href="%s" title="%s" />` -}}
   {{ printf $link .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
   {{ end }}
 
-  {{ "<!-- Toolbar color for Android devices -->" | safeHTML}}
+  {{ "<!-- Toolbar color on Android devices -->" | safeHTML}}
   <meta name="theme-color" content="#ffffff">
 </head>
