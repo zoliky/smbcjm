@@ -200,30 +200,30 @@ ul > li + li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  
+  &,
+  &::before,
+  &::after {
+    width: 30px;
+    height: 3px;
+    background: #0c0c0c;
+    border-radius: 0.5626em;
+    transition: all .4s ease-in-out;
+  }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 30px;
-  height: 3px;
-  background: #0c0c0c;
-  border-radius: 0.5626em;
-  transition: all .4s ease-in-out;
-}
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
 
-.hamburger::before,
-.hamburger::after {
-  position: absolute;
-  content: "";
-}
-
-.hamburger::before {
-  top: -8px;
-}
-
-.hamburger::after {
-  top: 8px;
+  &::before {
+    top: -8px;
+  }
+  
+  &::after {
+    top: 8px;
+  }
 }
 
 // Hamburger animation
