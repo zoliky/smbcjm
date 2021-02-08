@@ -7,17 +7,20 @@
 /* ---------------------------------------------------------------------------
 ##General
 ----------------------------------------------------------------------------*/
+
+// Variables
+$base-color: #746e76;
+$header-bg: #ffffff;
+$menu-item-color: #3d9ca8;
+$heading-color: #3d9ca8;
+$button-bgcolor: #a364a5;
+
 :root {
   font-size: 1em;
   line-height: 1.15;
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  --base-color: #746e76;
-  --header-bg: #ffffff;
-  --menu-items-color: #3d9ca8;
-  --heading-color: #3d9ca8;
-  --button-bgcolor: #a364a5;
 }
 
 *,
@@ -34,7 +37,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: var(--base-color);
+  color: $base-color;
   background: var(--background);
   font-family: Lato, sans-serif;
 }
@@ -44,7 +47,7 @@ h2,
 h3,
 h4 {
   letter-spacing: .02em;
-  color: var(--heading-color);
+  color: $heading-color;
 }
 
 h1 {
@@ -74,7 +77,7 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--base-color);
+  color: $base-color;
   background-color: transparent;
 }
 
@@ -136,13 +139,13 @@ ul > li + li {
   letter-spacing: .10em;
   padding: 0.57em 1.8em;
   border: 1px solid transparent;
-  background: var(--button-bgcolor);
+  background: $button-bgcolor;
   transition: transform ease-in-out 250ms;
   box-shadow: -4px 3px 8px -3px rgba(0, 0, 0, .5);
-}
 
-.button:hover {
-  transform: scale(1.1);
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -154,7 +157,7 @@ ul > li + li {
   width: 100%;
   height: 140px;
   z-index: 100;
-  background: var(--header-bg);
+  background: $header-bg;
   transition: top 0.3s linear 0s;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
@@ -254,25 +257,25 @@ ul > li + li {
   list-style: none;
   padding-left: 0;
   margin: 0;
-}
 
-.nav-menu > li {
-  line-height: 1;
-}
+  & > li {
+    line-height: 1;
+  }
 
-.nav-menu > li + li {
-  margin-top: 0;
-  border-top: 1px solid #ccc;
-}
+  & > li + li {
+    margin-top: 0;
+    border-top: 1px solid #ccc;
+  }
 
-.nav-menu > li > a {
-  display: block;
-  position: relative;
-  font-size: 1.3rem;
-  padding: 0.8em .5em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--menu-items-color);
+  & > li > a {
+    display: block;
+    position: relative;
+    font-size: 1.3rem;
+    padding: 0.8em .5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $menu-item-color;
+  }
 }
 
 /* Seal of transparency */
@@ -309,41 +312,41 @@ ul > li + li {
     display: flex;
     position: static;
     justify-content: center;
-  }
 
-  .nav-menu > li {
-    margin-left: 1em;
-    line-height: 1.8;
-  }
+    & > li {
+      margin-left: 1em;
+      line-height: 1.8;
+    }
 
-  .nav-menu > li > a {
-    padding: .1em 0;
-    white-space: nowrap;
-  }
+    & > li > a {
+      padding: .1em 0;
+      white-space: nowrap;
+    }
 
-  .nav-menu > li + li {
-    margin-left: 2.3em;
-    border-top: initial;
-  }
+    & > li + li {
+      margin-left: 2.3em;
+      border-top: initial;
+    }
 
-  .nav-menu > li > a::after {
-    display: block;
-    content: "";
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    height: 2px;
-    background: currentColor;
-    transition:
-      left .4s ease-out,
-      right .4s ease-out;
-  }
+    & > li > a::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      height: 2px;
+      background: currentColor;
+      transition:
+        left .4s ease-out,
+        right .4s ease-out;
+    }
 
-  .nav-menu > li > a.active::after,
-  .nav-menu > li > a:hover::after {
-    left: 0;
-    right: 0;
+    & > li > a.active::after,
+    & > li > a:hover::after {
+      left: 0;
+      right: 0;
+    }
   }
 }
 
@@ -548,7 +551,7 @@ ul > li + li {
 }
 
 .blog-post h3 > a {
-  color: var(--heading-color);
+  color: $heading-color;
 }
 
 .post-meta {
@@ -734,7 +737,7 @@ ul > li + li {
   display: block;
   width: 8px;
   height: 8px;
-  background: var(--heading-color);
+  background: $heading-color;
   border-radius: 50%;
   top: 12px;
   left: -20px;
