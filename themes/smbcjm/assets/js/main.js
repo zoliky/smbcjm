@@ -6,6 +6,23 @@
 
 "use strict";
 
+// Hide and show header
+const header = document.querySelector(".header");
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", event => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    if (!nav.classList.contains("is-open")) {
+      header.style.top = "-140px";
+    }
+  } else {
+    header.style.top = "0";
+  }
+
+  lastScrollTop = scrollTop;
+});
+
 // Hamburger navigation
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = menuToggle.parentElement;
@@ -31,20 +48,3 @@ const touchSupport = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0
 if (!touchSupport) {
   document.documentElement.className += " non-touch";
 }
-
-// Hide and show header
-const header = document.querySelector(".header");
-let lastScrollTop = 0;
-
-window.addEventListener("scroll", event => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop) {
-    if (!nav.classList.contains("is-open")) {
-      header.style.top = "-140px";
-    }
-  } else {
-    header.style.top = "0";
-  }
-
-  lastScrollTop = scrollTop;
-});
