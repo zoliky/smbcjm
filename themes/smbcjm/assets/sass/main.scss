@@ -373,14 +373,14 @@ ul > li + li {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
 
-.page-404-container > img {
-  width: 300px;
-}
+  & > img {
+    width: 300px;
+  }
 
-.page-404-container > h2 {
-  margin: .2em 0 0 0;
+  & > h2 {
+    margin: .2em 0 0 0;
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -396,19 +396,19 @@ ul > li + li {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-}
 
-.intro-container .button {
-  margin-top: 2.5em;
-}
-
-.intro-container::after {
-  content: "";
-  display: block;
-  background: #ccc;
-  height: 3px;
-  width: 80px;
-  margin: 2.5rem auto 0;
+  & .button {
+    margin-top: 2.5em;
+  }
+  
+  &::after {
+    content: "";
+    display: block;
+    background: #ccc;
+    height: 3px;
+    width: 80px;
+    margin: 2.5rem auto 0;
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -424,10 +424,10 @@ ul > li + li {
   margin: 0 auto;
   color: #726c74;
   font-size: 1.1rem;
-}
 
-.goals-container > h2 {
-  margin-bottom: 1.4em;
+  & > h2 {
+    margin-bottom: 1.4em;
+  }
 }
 
 .goals-list {
@@ -437,14 +437,14 @@ ul > li + li {
   flex-flow: row wrap;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items#Creating_gutters_between_items */
   margin: -18px;
-}
 
-.goals-list > li {
-  display: flex;
-  flex: 1 0 18em;
-  line-height: 1.5;
-  align-items: center;
-  margin: 18px;
+  & > li {
+    display: flex;
+    flex: 1 0 18em;
+    line-height: 1.5;
+    align-items: center;
+    margin: 18px;
+  }
 }
 
 .goals-icon {
@@ -535,7 +535,7 @@ ul > li + li {
   transition:
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s
+    padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .blog-post:hover {
