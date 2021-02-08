@@ -10,7 +10,7 @@
   {{ partial "footer.html" . }}
 
   {{ $script := resources.Get "js/main.js" | babel | minify | fingerprint -}}
-  <script src="{{ $script.Permalink }}"></script>
+  <script src="{{ $script.RelPermalink }}"></script>
 
   {{ if .HasShortcode "gallery" }}
     {{ partial "photoswipe.html" . }}
