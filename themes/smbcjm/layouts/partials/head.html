@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
   <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 
-  {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+  {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
   {{ "<!-- Styles -->" | safeHTML }}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">

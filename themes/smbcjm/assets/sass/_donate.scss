@@ -1,0 +1,36 @@
+.donate {
+  padding: 1.2em 1.2em 2.3em;
+}
+
+.donate-container {
+  max-width: 700px;
+  margin: 0 auto;
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul > li {
+    position: relative;
+  }
+  
+  ul > li::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: $heading-color;
+    border-radius: 50%;
+    top: 12px;
+    left: -20px;
+    position: absolute;
+  }
+
+  form {
+    margin-top: 2em;
+  }
+}
+
+[alt*="Amazon Smile"] {
+  margin: .1em 0 .2em;
+}

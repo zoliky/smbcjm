@@ -1,0 +1,40 @@
+.villa {
+  padding: 1.2em;
+}
+
+.villa-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h2 {
+    margin: 0 0 1em;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.villa-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+[class*="villa-col"] {
+  flex: 100%;
+}
+
+.villa-col-1 > img {
+  padding-top: 5px;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 52em) {
+  [class*="villa-col"] {
+    flex: 50%;
+  }
+
+  .villa-col-2 > h3 {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*! --------------------------------------------------------------------------
+             FILE: main.scss
+      DESCRIPTION: Main stylesheet
+           AUTHOR: Zoltán Király <zoliky@gmail.com>
+----------------------------------------------------------------------------*/
+
+// General
+@import "general";
+@import "404";
+
+// Partials
+@import "header";
+@import "intro";
+@import "goals";
+@import "villa";
+@import "footer";
+
+// Pages
+@import "about";
+@import "blog";
+@import "gallery";
+@import "donate";

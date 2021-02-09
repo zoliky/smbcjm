@@ -1,0 +1,189 @@
+.footer {
+  border-top: 1px solid #ccc;
+
+  h3 {
+    letter-spacing: 0.05em;
+    margin: 1.2em 0 1em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul > li {
+    margin: 0;
+  }
+  
+  & a:hover,
+  & a:focus {
+    color: #ae5ba1;
+    transition: color 0.2s linear;
+  }
+}
+
+[class*="footer-col"] {
+  flex: 100%;
+}
+
+.footer-col-3 > ul {
+  margin: .5em 0;
+}
+
+.footer-col-3 p {
+  margin-bottom: .5em;
+}
+
+.footer-col-3 > ul > li > a {
+  font-size: 1rem;
+}
+
+// Footer top
+.footer-top {
+  background: #d9d9d9;
+  padding: 10px 0;
+}
+
+.footer-top-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.address > h4 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.address > p {
+  margin: 0;
+}
+
+// Footer top - social
+.footer .social {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 15px 0 0 -6px;
+}
+
+.social > li + li {
+  margin-left: 1.8em;
+  margin-top: 0;
+}
+
+.social > li > a {
+  position: relative;
+  display: block;
+  color: #696969;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+:root.non-touch .social > li > a > i {
+  transition: color .30s;
+}
+
+[class*="icon-"] {
+  font-family: "IcoMoon";
+}
+
+.icon-facebook::before {
+  content: "\ea90";
+}
+
+.icon-twitter::before {
+  content: "\ea96";
+}
+
+.icon-email::before {
+  content: "\e945";
+}
+
+:root.non-touch .icon-facebook:hover {
+  color: #3a559f;
+}
+
+:root.non-touch .icon-twitter:hover {
+  color: #55acee;
+}
+
+:root.non-touch .icon-email:hover {
+  color: #41b4ac;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+
+  img {
+    display: block;
+  }
+}
+
+.badge-gn {
+  width: 160px;
+  height: 85px;
+  margin-right: 1.5em;
+}
+
+// Footer bottom
+.footer-bottom-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+
+  & > li + li {
+    margin-left: 1em;
+  }
+  
+  & > li > a {
+    color: #777;
+    font-size: 1rem;
+  }
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background: #18181a;
+  
+  ul {
+    margin: 0;
+  }
+}
+
+.footer-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p,
+.footer-top > p {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+@media (min-width: 52em) {
+  .footer-col-1 {
+    flex: 0 0 25%;
+  }
+
+  .footer-col-2 {
+    flex: 0 0 35%;
+  }
+
+  .footer-col-3 {
+    flex: 0 0 30%;
+  }
+}
