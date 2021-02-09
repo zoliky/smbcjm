@@ -21,8 +21,8 @@
   flex-flow: row wrap;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items#Creating_gutters_between_items */
   margin: -18px;
-
-  & > li {
+  
+  li {
     display: flex;
     flex: 1 0 18em;
     line-height: 1.5;
