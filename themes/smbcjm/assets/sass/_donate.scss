@@ -8,22 +8,22 @@
   
   ul {
     list-style: none;
-  }
-  
-  ul > li {
-    position: relative;
-  }
-  
-  ul > li::before {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background: $heading-color;
-    border-radius: 50%;
-    top: 12px;
-    left: -20px;
-    position: absolute;
+    
+    li {
+      position: relative;
+      
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 12px;
+        left: -20px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $heading-color;
+      }
+    }
   }
 
   form {

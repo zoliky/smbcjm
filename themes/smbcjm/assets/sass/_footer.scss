@@ -10,14 +10,14 @@
   ul {
     list-style: none;
     padding-left: 0;
-  }
 
-  ul > li {
-    margin: 0;
+    li {
+      margin: 0;
+    }
   }
   
-  & a:hover,
-  & a:focus {
+  a:hover,
+  a:focus {
     color: #ae5ba1;
     transition: color 0.2s linear;
   }
@@ -54,34 +54,35 @@
   justify-content: space-between;
 }
 
-.address > h4 {
-  margin: 0;
-  font-size: 1em;
+.address {
+  h4 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
-.address > p {
-  margin: 0;
-}
-
-// Footer top - social
-.footer .social {
+.social {
   display: flex;
   padding: 0;
   list-style: none;
   margin: 15px 0 0 -6px;
-}
 
-.social > li + li {
-  margin-left: 1.8em;
-  margin-top: 0;
-}
+  li + li {
+    margin-left: 1.8em;
+    margin-top: 0;
+  }
 
-.social > li > a {
-  position: relative;
-  display: block;
-  color: #696969;
-  font-size: 2rem;
-  text-decoration: none;
+  li > a {
+    position: relative;
+    display: block;
+    color: #696969;
+    font-size: 2rem;
+    text-decoration: none;
+  }
 }
 
 :root.non-touch .social > li > a > i {
@@ -137,11 +138,11 @@
   padding-left: 0;
   display: flex;
 
-  & > li + li {
+  li + li {
     margin-left: 1em;
   }
   
-  & > li > a {
+  li > a {
     color: #777;
     font-size: 1rem;
   }

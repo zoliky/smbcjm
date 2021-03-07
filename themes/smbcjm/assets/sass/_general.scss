@@ -7,15 +7,17 @@ $button-bgcolor: #a364a5;
 :root {
   font-size: 1em;
   line-height: 1.15;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+         -box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 @font-face {
@@ -64,8 +66,8 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: $base-color;
+  text-decoration: none;
   background-color: transparent;
 }
 

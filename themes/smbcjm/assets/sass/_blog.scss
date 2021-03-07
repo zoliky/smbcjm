@@ -18,21 +18,20 @@
   border-radius: 0.25em;
   box-shadow:
     -1px 2px 10px 1px rgba(46,41,51,0.08),
-    1px 2px 5px rgba(71,63,79,0.08);
+     1px 2px 5px rgba(71,63,79,0.08);
   transition:
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
-    padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   
   h3 {
     margin: 0;
     font-size: 1.9rem;
+
+    a {
+      color: $heading-color;
+    }
   }
   
-  h3 > a {
-    color: $heading-color;
-  }
-
   &:hover {
     transform: translateY(-0.25em);
     box-shadow:

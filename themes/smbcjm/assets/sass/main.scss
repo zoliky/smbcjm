@@ -7,18 +7,18 @@
 ----------------------------------------------------------------------------*/
 
 // General
-@import "general";
-@import "404";
+@import "general.scss";
+@import "404.scss";
 
 // Partials
-@import "header";
-@import "intro";
-@import "goals";
-@import "villa";
-@import "footer";
+@import "header.scss";
+@import "intro.scss";
+@import "goals.scss";
+@import "villa.scss";
+@import "footer.scss";
 
 // Pages
-@import "about";
-@import "blog";
-@import "gallery";
-@import "donate";
+@import "about.scss";
+@import "blog.scss";
+@import "gallery.scss";
+@import "donate.scss";
