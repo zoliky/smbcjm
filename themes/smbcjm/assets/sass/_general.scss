@@ -1,3 +1,4 @@
+// Variables
 $base-color: #746e76;
 $header-bg: #ffffff;
 $menu-item-color: #3d9ca8;
@@ -36,8 +37,8 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: .02em;
   color: $heading-color;
+  letter-spacing: .02em;
 }
 
 h1 {
@@ -68,7 +69,7 @@ p {
 a {
   color: $base-color;
   text-decoration: none;
-  background-color: transparent;
+  background-color: transparent; // Remove the gray background on active links in IE 10
 }
 
 i {
@@ -77,15 +78,19 @@ i {
 
 img {
   max-width: 100%;
-  border-style: none;
+  border-style: none; // Remove the border on images inside links in IE 10
 }
 
+// Add the correct box sizing in Firefox
+// Show the overflow in Edge and IE
 hr {
   height: 0;
   overflow: visible;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
+// Render the main element consistently in IE
 main {
   display: block;
 }
