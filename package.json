@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/zoliky/smbcjm#readme",
   "dependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10"
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.12.11"
+    "@babel/preset-env": "^7.13.10"
   }
 }
