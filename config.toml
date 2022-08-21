@@ -93,3 +93,8 @@ theme         = "smbcjm"
     icon  = "icon-email"
     title = "Contact us via email"
     url   = "mailto:msaul@smbcjm.org?subject=Hello%20There!&body=Hello%20Megan,"
+
+# Security
+[security]
+  [security.exec]
+    allow = ['^go$', '^npx$', '^postcss$', '^babel$']
