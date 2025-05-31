@@ -1,7 +1,7 @@
 ---
 title: "Jamaica Kid's Treat and Labour Day 2025"
 author: "Webmaster"
-date: 2025-05-30
+date: 2025-04-25
 draft: false
 ---
 
