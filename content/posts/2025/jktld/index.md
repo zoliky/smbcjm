@@ -5,6 +5,10 @@ date: 2025-05-30
 draft: false
 ---
 
+This Easter, Spring Mountain Benefit Corp. brought smiles to over 200 children and 50 seniors with a community-wide treat filled with joy, food, and fellowship. Thanks to dedicated volunteers and supporters, the event was a bright moment of connection and care for the neighborhood we serve.
+
+Please remember, we can’t do this work without your help. Your donation makes it possible for us to keep helping families and neighbors in Spring Mountain. Please consider giving today to bring more happiness and hope to our community. Click this post to see pictures.
+
 {{< postimage "images/jktld-01.jpg" "image" >}}
 {{< postimage "images/jktld-02.jpg" "image" >}}
 {{< postimage "images/jktld-03.jpg" "image" >}}
