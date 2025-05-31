@@ -38,7 +38,7 @@ theme         = "smbcjm"
   weight  = 2
 
 [[menu.nav]]
-  name    = "Blog"
+  name    = "Our work"
   url     = "/posts"
   weight  = 3
 
